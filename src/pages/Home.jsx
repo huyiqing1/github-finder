@@ -1,9 +1,13 @@
+import UserResults from "../components/users/UserResults";
+import UserSearch from "../components/users/UserSearch";
+
 const Home = () => {
-    return ( 
+    return (
         <div className="home">
-            Home
+            <UserSearch />
+            <UserResults />
         </div>
-     );
+    );
 }
- 
+
 export default Home;

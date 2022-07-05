@@ -10,7 +10,7 @@ const About = () => {
             </p>
             <p className='text-lg text-gray-400'>
                 Layout By:
-                <a className='text-white' href='https://www.linkedin.com/in/yiqing-hu/'>
+                <a className='text-white' href='https://www.linkedin.com/in/yiqing-hu/' rel="noopener noreferrer" target='_blank'>
                     Yiqing Hu
                 </a>
             </p>
