@@ -3,7 +3,7 @@ import githubReducer from "./GithubReducer";
 
 const GithubContext = createContext();
 
-const GITHUB_URL = "https://api.github.com";
+const GITHUB_URL = process.env.REACT_APP_GITHUB_URL;
 
 export const GithubProvider = ({ children }) => {
     const initialState = {
@@ -73,10 +73,7 @@ export const GithubProvider = ({ children }) => {
     }
 
     return <GithubContext.Provider value={{
-        users: state.users,
-        isLoading: state.isLoading,
-        user: state.user,
-        repos: state.repos,
+        ...state,
         searchUsers,
         clearUsers,
         getUser,
